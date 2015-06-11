@@ -50,4 +50,6 @@ endfunction
 function! cmus#Current()
     echo s:get_song_info()
 endfunction
-
+if !exists(":Current")
+  command Current :call cmus#Current()
+endif
