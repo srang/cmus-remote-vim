@@ -1,5 +1,7 @@
 cmus-remote-vim
 ===============
+This is a fork of professorsloth's vim plugin. The goal of this fork is to make this plugin
+more flexible and support integration with the tabline plugin
 
 Why I made this
 ---------------
