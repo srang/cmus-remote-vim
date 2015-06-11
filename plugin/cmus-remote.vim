@@ -22,32 +22,32 @@ function! s:get_song_info()
     return artist . " - " . album . " - " . song
 endfunction
 
-function! s:pause()
+function! cmus#Pause()
     let result = system('cmus-remote --pause')
     echo "Pausing/resuming " . s:get_song_info()
 endfunction
 
-function! s:stop()
+function! cmus#Stop()
     let result = system('cmus-remote --stop')
     echo s:get_song_info()
 endfunction
 
-function! s:play()
+function! cmus#Play()
     let result = system('cmus-remote --play')
     echo "Playing " . s:get_song_info()
 endfunction
 
-function! s:next()
+function! cmus#Next()
     let result = system('cmus-remote --next')
     echo "Playing " . s:get_song_info()
 endfunction
 
-function! s:previous()
+function! cmus#Previous()
     let result = system('cmus-remote --prev')
     echo "Playing " . s:get_song_info()
 endfunction
 
-function! s:current()
+function! cmus#Current()
     echo s:get_song_info()
 endfunction
 
